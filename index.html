@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SightLine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/IMG2.png');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        .introduction {
+            background-color: #e0f3ff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .introduction img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .introduction-content {
+            max-width: 750px;
+        }
+
+        .introduction-content h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .introduction-content p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .how-it-works, .key-features, .mission-statement, .improvements, .conclusion {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .how-it-works h2, .key-features h2, .mission-statement h2, .improvements h2, .conclusion h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .how-it-works p, .key-features p, .mission-statement p, .improvements p, .conclusion p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .key-features ul, .improvements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .key-features li, .improvements li {
+            margin-bottom: 15px;
+        }
+
+        .key-features h3, .improvements h3 {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .key-features p, .improvements p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .mission-statement h1 {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+        }
+
+        .mission-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .mission-content img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .mission-text-box {
+            max-width: 600px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .mission-text-box h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .introduction {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .mission-content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>SightLine</h1>
+        </div>
+
+        <div class="introduction">
+            <img src="Logo.png" alt="SightLine Logo">
+            <div class="introduction-content">
+                <h1>Introduction</h1>
+                <p>
+                    Welcome to SightLine, the innovative eye-tracking solution aimed at people with disabilities
+                    and anyone seeking hands-free digital accessibility. Imagine navigating your device, browsing the web,
+                    and completing tasks efficiently just by where you look. Our smart lens harnesses cutting-edge eye-tracking
+                    technology to empower users, bringing seamless and intuitive control to those with limited mobility or a
+                    preference for hands-free interaction.
+                </p>
+            </div>
+        </div>
+
+        <div class="how-it-works">
+            <h2>How SightLine Works</h2>
+            <p>
+                SightLine works by tracking the position of your pupils and then determining what you are looking at based
+                on where they are facing. In order to use this tool, you must complete the calibration feature. This works
+                by having you look at a dot on the screen and then clicking once. Once the current is calibrated, you can
+                now move the mouse based on your face.
+            </p>
+            <p>
+                This breakthrough tool represents a significant step towards a future where digital experiences align with
+                human intent, operating at the speed of thought. By transforming eye movements into actionable commands,
+                we aspire to replace cumbersome input devices and significantly improve convenience for all users.
+                Join us in shaping the future of digital interaction—one that is more inclusive, accessible, and
+                intuitively responsive.
+            </p>
+        </div>
+
+        <div class="key-features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    <h3>Advanced Eye-Tracking Technology</h3>
+                    <p>- Utilizes cutting-edge algorithms to detect and follow eye movement with remarkable precision, converting natural gaze patterns into actionable commands.</p>
+                    <p>- Tracks eye movement seamlessly across the screen, ensuring every interaction is accurately captured, allowing users to navigate intuitively and effectively.</p>
+                </li>
+                <li>
+                    <h3>Functionality</h3>
+                    <p><strong>Left Click with Two Blinks:</strong> When the system detects two quick blinks in succession, it simulates a left mouse click. This could be used for actions such as selecting items, opening files, or activating buttons.</p>
+                    <p><strong>Right Click with Three Blinks:</strong> Three quick blinks would trigger a right mouse click, allowing users to access context menus or secondary actions that typically require a right-click.</p>
+                </li>
+                <li>
+                    <h3>Calibration</h3>
+                    <p>Allows users to calibrate the blink detection sensitivity to accommodate individual differences in blink rate and duration.</p>
+                </li>
+                <li>
+                    <h3>User-Friendly Interface</h3>
+                    <p>Simple, intuitive design that allows easy navigation for users of all abilities.</p>
+                </li>
+                <li>
+                    <h3>Data Privacy and Security</h3>
+                    <p>Clear policies on data handling, ensuring user privacy and protection of personal information.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-statement">
+            <h1>Our Mission Statement</h1>
+            <div class="mission-content">
+                <div class="mission-text-box">
+                    <h3>Why we are doing this</h3>
+                    <p>
+                        At SightLine, our mission is to empower individuals of all abilities through innovative
+                        eye-tracking technology. We are committed to creating accessible tools that enhance
+                        communication, learning, and daily interactions for people with disabilities while
+                        also benefiting the wider community.
+                    </p>
+                </div>
+                <img src="IMG1.jpeg" alt="Person using eye-tracking technology">
+            </div>
+            <p>
+                We believe that technology should be inclusive and adaptable, bridging the gap between different
+                experiences and needs. Our eye tracker is designed not only to improve convenience but also to
+                enrich lives and create opportunities for growth, independence, and equal access in a digital world.
+            </p>
+        </div>
+
+        <!-- Improvements section -->
+        <div class="improvements">
+            <h2>Improvements</h2>
+            <p>Some ways that SightLine could be improved in the future:</p>
+            <ul>
+                <li>
+                    <h3>Enhanced Compatibility for Glasses Wearers</h3>
+                    <p><strong>Adaptive tracking algorithms:</strong> Optimize algorithms to adapt to different types of glasses, including reflective and anti-reflective lenses, which often interfere with eye-tracking accuracy.</p>
+                    <p><strong>Glare reduction and lens reflection handling:</strong> Integrate more advanced filters or machine learning techniques to minimize issues caused by lens glare, especially in bright environments.</p>
+                    <p><strong>Calibration options:</strong> Allow users to calibrate specifically for their eyewear, making adjustments that recognize lens thickness, angle, and tint.</p>
+                </li>
+                <li>
+                    <h3>Battery Life Extension</h3>
+                    <p><strong>Low-power operation modes:</strong> Introduce “sleep” or “low-power” modes that conserve battery during inactivity, extending overall usage time.</p>
+                    <p><strong>Improved battery technology:</strong> Explore partnerships with battery manufacturers to utilize newer technologies that offer longer-lasting performance in compact sizes.</p>
+                </li>
+                <li>
+                    <h3>Customizable User Profiles</h3>
+                    <p><strong>Individualized settings:</strong> Allow users to create profiles that store personalized settings for gaze tracking sensitivity, click actions, and interface layouts.</p>
+                    <p><strong>Adaptive learning:</strong> Implement machine learning algorithms that learn user preferences over time, automatically adjusting settings to enhance usability.</p>
+                </li>
+                <li>
+                    <h3>Multi-Device Integration</h3>
+                    <p><strong>Cross-platform compatibility:</strong> Expand functionality to work seamlessly across various devices (smartphones, tablets, and smart TVs), enhancing overall user experience.</p>
+                    <p><strong>Cloud syncing:</strong> Allow users to sync profiles and settings across devices using cloud technology for continuity and accessibility.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Conclusion section -->
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                SightLine is more than just a product; it's a commitment to transforming lives through
+                technology. By leveraging advanced eye-tracking capabilities, we aim to create a world where
+                everyone can access and enjoy digital experiences without limitations. With your support and
+                collaboration, we can continue to innovate and expand our offerings, making technology accessible
+                for all.
+            </p>
+            <p>
+                Join us on this journey to empower individuals and redefine the possibilities of digital interaction.
+                Together, we can shape a more inclusive future for everyone.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
